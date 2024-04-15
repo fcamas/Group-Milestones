@@ -50,7 +50,7 @@ The Meal Recipe app offers users a convenient platform to explore and save diver
   * User can view detailed instructions for a selected recipe.
 - [ ] **Saved Recipes Screen**
   * User can access a list of saved favorite recipes.
-- [ ] **Shopping List Screen**
+- [ ] **Shopping List Screen**(Optional)
   * User can view and manage ingredients for selected recipes.
 
 ### 3. Navigation
@@ -63,14 +63,10 @@ The Meal Recipe app offers users a convenient platform to explore and save diver
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] Recipe Search Screen
-  * Leads to Recipe Detail Screen
-- [ ] Recipe Detail Screen
-  * Allows navigation to Shopping List Screen
-- [ ] Saved Recipes Screen
-  * Leads to Recipe Detail Screen
-- [ ] Shopping List Screen
-  * Allows navigation to Recipe Detail Screen
+- [ ] Category Cell 
+  * Leads to Meal Category Screen
+- [ ] Meal Cell 
+  * Leads to Meal Detail Screen
 
 ## Wireframes
 
@@ -119,5 +115,5 @@ The Meal Recipe app offers users a convenient platform to explore and save diver
   - (GET) Retrieve detailed information for a selected recipe
 - **Saved Recipes Screen**
   - (GET) Fetch list of user's saved favorite recipes
-- **Shopping List Screen**
+- **Shopping List Screen** (Optional)
   - (POST) Add ingredients from selected recipes to the user's shopping list
