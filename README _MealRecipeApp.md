@@ -58,7 +58,6 @@ The Meal Recipe app offers users a convenient platform to explore and save diver
 **Tab Navigation** (Tab to Screen)
 
 - [ ] Home
-- [ ] Recipes
 - [ ] Favorites
 - [ ] Shopping List
 
@@ -75,8 +74,8 @@ The Meal Recipe app offers users a convenient platform to explore and save diver
 
 ## Wireframes
 
-Super rough, so feel free to change it if anyone dislikes it
-![Rough Image](https://i.imgur.com/Nq20KrN.jpeg)
+![wireframes](https://github.com/fcamas/Group-Milestones/assets/76220782/cf93a7e9-18d9-49b7-9670-0b3f929e6b91)
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
@@ -86,25 +85,23 @@ Super rough, so feel free to change it if anyone dislikes it
 
 ### Models
 
-**User**
-| Property | Type   | Description                                  |
-|----------|--------|----------------------------------------------|
-| userId   | String | unique id for the user                       |
-| username | String | user's display name                          |
-| email    | String | user's email address                         |
-| password | String | user's password for login authentication     |
+**Category**
+
+| Property            | Type    | Description                               |
+|---------------------|---------|-------------------------------------------|
+| categoryId          | String  | unique id for the category                |
+| categoryName        | String  | name of the category                      |
+| categoryImageURL    | String  | URL of the category image                 |
+| categoryDescription | String  | description of the category
 
 **Recipe**
 | Property   | Type   | Description                           |
 |------------|--------|---------------------------------------|
 | recipeId   | String | unique id for the recipe              |
-| title      | String | title of the recipe                   |
-| ingredients| String | list of ingredients needed for the recipe |
-| instructions| String | step-by-step cooking instructions     |
+| name      | String | title of the recipe                    |
 | imageURL   | String | URL of the recipe image               |
-| category   | String | category or cuisine type of the recipe |
 
-**DetailLocalData**
+**Detail**
 | Property    | Type       | Description                              |
 |-------------|------------|------------------------------------------|
 | id          | String     | unique identifier for the detail         |
@@ -112,23 +109,7 @@ Super rough, so feel free to change it if anyone dislikes it
 | ingredients | [String]?  | list of ingredients for the recipe       |
 | measures    | [String]?  | corresponding measures for the ingredients |
 
-**DessertDetail**
-| Property | Type       | Description                          |
-|----------|------------|--------------------------------------|
-| meals    | [Detail]   | list of dessert details              |
 
-**Detail**
-| Property           | Type    | Description                           |
-|--------------------|---------|---------------------------------------|
-| id                 | String  | unique identifier for the dessert     |
-| strMeal            | String  | name of the dessert                   |
-| strDrinkAlternate | String? | alternative drink option              |
-| strCategory        | String  | category of the dessert               |
-| strArea            | String  | area or region of the dessert         |
-| strInstructions    | String  | cooking instructions for the dessert  |
-| strMealThumb       | String  | URL of the dessert image              |
-| ingredients        | [String]? | list of ingredients for the dessert  |
-| measures           | [String]? | corresponding measures for the ingredients |
 
 ### Networking
 
